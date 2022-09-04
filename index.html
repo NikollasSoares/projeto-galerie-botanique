@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body {
+            background: #d4d0c6 url('images/backdrop.gif');
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #665544;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            flex-direction: column  
+        }
+
+        @media only screen and (max-width: 570px) {
+            header {
+                width: 100%;
+            }
+            header img {
+                width: 100%;
+            }
+        }
+
+        div.photos {
+            width: 220px;
+            margin: 10px;
+            float: left;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 500px) {
+            main {
+                display: flex;
+                width: 400px;
+                flex-wrap: nowrap;
+                flex-direction: column;
+            }
+        }
+
+        figure {
+            display: block;
+            width: 200px;
+            margin: 0;
+            padding: 10px;
+            background: #e7e3d8;
+            border: 1px solid #d6d6d6;
+        }
+
+        figure img {
+            height: 150px;
+        }
+
+        figcaption {
+            background: #e7e3d8 url('images/icon.png') no-repeat;
+            padding-left: 20px;
+        }
+
+        @media only screen and (max-width: 735px) {
+            figure {
+                display: block;
+                width: 200px;
+                margin-bottom: 10px;
+                padding: 10px;
+                background: #e7e3d8;
+            }
+            div.photos {
+                width: 220px;
+                float: left;
+            }
+        }
+
+        @media only screen and (max-width: 570px) {
+            header p {
+                text-align: center;
+                max-width: 90vw;
+            }
+            div.photos {
+                margin: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fundo">
+        <header>
+            <img src="images/title.gif" alt="Galerie Botanique">
+            <p>Here is a selection of a antique botanical prints held in our collection</p>
+        </header>
+        <main>
+            <div class="photos">
+                <figure>
+                    <img src="images/print-01.jpg" alt="Heliantus">
+                    <figcaption>Heliantus</figcaption>
+                </figure>
+            </div>
+            <div class="photos">
+                <figure>
+                    <img src="images/print-02.jpg" alt="Passifiora">
+                    <figcaption>Passifiora</figcaption>
+                </figure>
+            </div>
+            <div class="photos">
+                <figure>
+                    <img src="images/print-03.jpg" alt="Nycotalos">
+                    <figcaption>Nycotalos</figcaption>
+                </figure>
+            </div>
+            <div class="photos">
+                <figure>
+                    <img src="images/print-04.jpg" alt="Polianthes">
+                    <figcaption>Polianthes </figcaption>
+                </figure>
+            </div>
+            <div class="photos">
+                <figure>
+                    <img src="images/print-05.jpg" alt="Ficus">
+                    <figcaption>Ficus</figcaption>
+                </figure>
+            </div>
+            <div class="photos">
+                <figure>
+                    <img src="images/print-06.jpg" alt="Dendrobium">
+                    <figcaption>Dendrobium</figcaption>
+                </figure>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
